@@ -238,7 +238,7 @@ public final class Dex2jar {
         return this;
     }
 
-    public void to(Path file) throws IOException {
+    public void to(File file) throws IOException {
         if (Files.exists(file) && Files.isDirectory(file)) {
             doTranslate(file);
         } else {
